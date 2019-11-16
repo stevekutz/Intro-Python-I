@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 Python provides a number of ways to perform printing. Research
 how to print using the printf operator, the `format` string 
@@ -17,4 +18,5 @@ print('x is  %i'  %(x) + ', y is  %.2f'  % (y) +', z is "' + (z) + '"')
 print('x is {0}, y is {1:.2f}, z is "{2}"'.format(x, y, z))
 
 # Finally, print the same thing using an f-string
-#print(f'x is {x}, y is {y:.2f}, z is "{z}"')
+print(f'x is {x}, y is {y:.2f}, z is "{z}"')
+print(f'x is {x}')

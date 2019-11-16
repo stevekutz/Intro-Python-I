@@ -21,7 +21,7 @@ print("OS platform is ", sys.platform)
 
 # Print out the version of Python you're using:
 # YOUR CODE HERE
-print("Python version(should be 3.8.0), but instead says:",  sys.version)
+print("Python version(should be 3.8.0), and it says:",  sys.version)
 
 
 

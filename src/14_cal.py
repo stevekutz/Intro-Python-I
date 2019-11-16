@@ -22,3 +22,33 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+date = datetime.today()
+print(date)
+
+def my_calendar(month = date.month, year = date.year):
+  
+  new_cal = calendar.TextCalendar()
+
+  if len(sys.argv) == 2:
+    month = int(month)
+    year = int(year)
+    # new_cal = calendar.TextCalendar()
+    print(new_cal.formatmonth(year, month))    
+  elif len(sys.argv) == 1:
+    currentYear = datetime.now().year    
+    print(new_cal.formatmonth(currentYear, month))     
+  elif len(sys.argv) > 2:
+      print('Input Error/n')
+      print('Provide numerical input for month and year')
+      print(' ex.  (12, 2019)  ')
+  else:    
+    month = int(month)
+    year = int(year)
+    new_cal = calendar.TextCalendar()
+    print(new_cal.formatmonth(year, month))
+
+# my_calendar(12, 2019)
+# my_calendar(11)
+my_calendar()
+# my_calendar(1, 2, 3)  // won't even run to get to message about input
