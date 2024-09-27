@@ -1,0 +1,3 @@
+Python has lots of tricks
+	to make things more efficient
+		really clean code
